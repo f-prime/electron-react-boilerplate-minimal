@@ -10,7 +10,7 @@ Comes with a basic counting app
 
 # How to run
 
-2 simple commands.
+3 simple commands.
 
 `npm install`
 
