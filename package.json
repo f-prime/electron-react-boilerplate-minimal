@@ -1,0 +1,44 @@
+{
+  "name": "electron-react-boilerplate-minimal",
+  "version": "1.0.0",
+  "description": "An Electron, React, and Redux boilerplate for minimalists.",
+  "main": "main.js",
+  "scripts": {
+    "dev": "webpack --watch",
+    "start": "electron ."
+  },
+  "repository": "https://github.com/f-prime/electron-react-boilerplate-minimal",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "f-prime",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
+    "electron": "^4.0.4",
+    "react-hot-loader": "^4.7.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-redux": "^6.0.0",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
+  }
+}
