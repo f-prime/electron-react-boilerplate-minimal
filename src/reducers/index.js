@@ -1,28 +1,32 @@
+// Action Types
+
+const INCREMENT = "INCREMENT";
+
+// Initial State
+
 const initialState = {
     number:0
 };
 
+// Root Reducer
+
 export default function rootReducer(state=initialState, action) {
-    const reducers = {
-        INCREMENT:increment_reducer
-    };
-
-    if(reducers[action.type]) {
-        return Object.assign({}, state, reducers[action.type](state, action));
+    switch(action.type) {
+        case INCREMENT:
+            return increment_reducer(state, action);
+        default:
+            return state;
     }
-
-    return state;
 }
 
 // actions
 
 export function increment_action(payload) {
-    return {type:"INCREMENT", payload:payload};
+    return {type:INCREMENT, payload:payload};
 }
 
 // reducers
 
 function increment_reducer(state, action) {
-    console.log(state.number);
-    return {number:state.number + 1}; 
+    return {...state, number:state.number + 1}; 
 }
