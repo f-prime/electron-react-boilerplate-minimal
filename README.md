@@ -20,4 +20,4 @@ Comes with a basic counting app
 
 # Building for Production
 
-`npm build`
+`npm run build`
