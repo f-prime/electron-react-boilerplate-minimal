@@ -14,10 +14,10 @@ Comes with a basic counting app
 
 `npm install`
 
-`npm run dev`
+`yarn dev`
 
-`npm start`
+`yarn start`
 
 # Building for Production
 
-`npm run build`
+`yarn build`
