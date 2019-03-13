@@ -1,18 +1,14 @@
-import React from 'react';
-import { increment_action } from "../reducers/";
-import { ReactReduxContext } from 'react-redux'
+import React from 'reactn';
+import { useGlobal } from 'reactn'; 
 
-export default class Counter extends React.Component {
-    render() {
-        return (
-           <ReactReduxContext.Consumer>
-                {(store) => (
-                    <button onClick={() => store.store.dispatch(increment_action())}>
-                        {store.storeState.number}
-                    </button>
-                )}
-            </ReactReduxContext.Consumer>
-        );
-    }
+export default function Counter() {
+    
+    const [number, setNumber] = useGlobal("number");
+    
+    return (
+        <button onClick={() => setNumber(number + 1)}>
+            { number }
+        </button>
+    );
 }
 

@@ -1,6 +1,6 @@
 # electron-react-boilerplate-minimal
 
-An Electron, React and Redux boilerplate for minimalists. Comes with Webpack, Babel, Electron, Redux, and Thunk.
+An Electron, React (16.8) boilerplate for minimalists. Comes with Webpack, Babel, Electron, reactn and an example app using React Hooks.
 
 Uses [electron-quick-start](https://github.com/electron/electron-quick-start) for Electron base. 
 
@@ -17,3 +17,7 @@ Comes with a basic counting app
 `npm run dev`
 
 `npm start`
+
+# Building for Production
+
+`npm build`

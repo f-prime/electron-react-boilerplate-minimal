@@ -3,9 +3,16 @@
   "version": "1.0.0",
   "description": "An Electron, React, and Redux boilerplate for minimalists.",
   "main": "main.js",
+  "build": {
+    "appId": "electron-react-boilerplate-minimal",
+    "mac": {
+      "category": "demo.app"
+    }
+  },
   "scripts": {
     "dev": "webpack --watch",
-    "start": "electron ."
+    "start": "electron .",
+    "build": "webpack; electron-builder"
   },
   "repository": "https://github.com/f-prime/electron-react-boilerplate-minimal",
   "keywords": [
@@ -26,6 +33,7 @@
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.0",
     "electron": "^4.0.4",
+    "electron-builder": "^20.39.0",
     "react-hot-loader": "^4.7.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.29.5",
@@ -36,9 +44,7 @@
     "babel-core": "^6.26.3",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
-    "react-redux": "^6.0.0",
     "react-router-dom": "^4.3.1",
-    "redux": "^4.0.1",
-    "redux-thunk": "^2.3.0"
+    "reactn": "^1.0.0"
   }
 }
